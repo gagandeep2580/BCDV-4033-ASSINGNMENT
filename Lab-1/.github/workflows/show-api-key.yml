@@ -1,0 +1,11 @@
+name: Secret API Key
+on: [push]
+jobs:
+  retrieve-secret:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Display API Key
+        run: "echo API Key: ${{ secrets.API_KEY }}"

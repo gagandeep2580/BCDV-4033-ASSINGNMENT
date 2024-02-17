@@ -1,0 +1,8 @@
+name: Echo Name on Push
+on: [push]
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo My Name
+        run: echo "Gagandeep Kaur"
